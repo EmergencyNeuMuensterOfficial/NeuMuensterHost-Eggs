@@ -6,7 +6,7 @@
     },
     "exported_at": "2026-10-25T12:00:00+02:00",
     "name": "NodeJS Playwright",
-    "author": "niclas@specht.email",
+    "author": "support@staff.neumuenster.de",
     "description": "Node.js mit allen Systembibliotheken für Playwright (Chromium, Firefox), Xvfb und Fonts (CJK, Emoji). Installiert die passenden Browser beim Start automatisch, ohne Root.",
     "features": [],
     "docker_images": {
