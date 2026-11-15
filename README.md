@@ -22,11 +22,12 @@ generic/                    # Sprach-/Runtime-Eggs
 ├── python/
 │   ├── egg-python.json             # Python 3.11 – 3.15
 │   └── README.md
+├── java/                   # Java (Temurin/OpenJDK) — noch kein Egg
 ├── lua/                    # Lua / LuaJIT — noch kein Egg
 └── rust/                   # Rust (cargo) — noch kein Egg
 ```
 
-Die Gruppen `lua` und `rust` sind leer; im Upstream-Repo
+Die Gruppen `java`, `lua` und `rust` sind leer; im Upstream-Repo
 ([daki-yolks](https://github.com/niclasspecht/daki-yolks)) gibt es dafür keine Eggs.
 
 Herkunft der importierten Eggs und Lizenzhinweise: siehe [CREDITS.md](CREDITS.md).
