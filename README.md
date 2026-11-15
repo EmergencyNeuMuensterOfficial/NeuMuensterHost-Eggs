@@ -10,24 +10,14 @@ synchronisiert es automatisch.
 ## Struktur
 
 ```
-games/                        # Gameserver-Eggs (Minecraft, Rust, FiveM, Source, ...)
-applications/                 # Anwendungs-Eggs (Bots, Voice, Web-Tools, ...)
-generic/                      # Sprach-/Runtime-Eggs
-├── nodejs/                   # Node.js
-├── nodejs-playwright/        # Node.js inkl. Playwright + Browser-Deps
-├── bun/                      # Bun
-├── deno/                     # Deno
-├── python/                   # Python (pip/venv)
-├── lua/                      # Lua / LuaJIT
-├── rust/                     # Rust (cargo)
-├── go/                       # Go
-├── java/                     # Java (Temurin/OpenJDK)
-├── dotnet/                   # .NET / C#
-├── php/                      # PHP
-├── ruby/                     # Ruby (bundler)
-├── debian/                   # Debian-Basis-Image
-├── ubuntu/                   # Ubuntu-Basis-Image
-└── ffmpeg/                   # FFmpeg / Medien-Tooling
+games/                      # Gameserver-Eggs
+applications/               # Anwendungs-Eggs
+generic/                    # Sprach-/Runtime-Eggs
+├── nodejs/                 # Node.js
+├── nodejs-playwright/      # Node.js inkl. Playwright + Browser-Deps
+├── python/                 # Python (pip/venv)
+├── lua/                    # Lua / LuaJIT
+└── rust/                   # Rust (cargo)
 ```
 
 Die Gruppen sind bewusst leer — sie werden erst mit den jeweiligen Eggs befüllt.
