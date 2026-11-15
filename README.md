@@ -10,8 +10,36 @@ synchronisiert es automatisch.
 ## Struktur
 
 ```
-games/                      # Gameserver-Eggs
 applications/               # Anwendungs-Eggs
+└── bots/
+    └── ree6/
+        ├── egg-ree6.json           # Ree6 Discord-Bot
+        ├── config.yml              # Referenz-Template (nicht vom Egg genutzt)
+        └── README.md
+
+database/                   # Datenbank-Eggs
+├── nosql/
+│   ├── mongodb/
+│   │   ├── egg-mongo-d-b7.json     # MongoDB 7
+│   │   ├── egg-mongo-d-b8.json     # MongoDB 8
+│   │   └── README.md
+│   └── rethinkdb/
+│       ├── egg-rethinkdb.json
+│       └── README.md
+└── sql/
+    ├── mariadb/
+    │   ├── egg-maria-d-b.json      # MariaDB 10.6 – 11.8
+    │   └── README.md
+    └── postgres/
+        ├── egg-postgres13.json     # je ein Egg pro Version
+        ├── egg-postgres14.json
+        ├── egg-postgres15.json
+        ├── egg-postgres16.json
+        ├── egg-postgres17.json
+        └── README.md
+
+games/                      # Gameserver-Eggs — noch leer
+
 generic/                    # Sprach-/Runtime-Eggs
 ├── java/
 │   ├── egg-java.json               # Generic Java (Java 8 – 21)
@@ -33,11 +61,12 @@ generic/                    # Sprach-/Runtime-Eggs
     └── README.md
 ```
 
-Eggs kommen aus zwei Quellen: [daki-yolks](https://github.com/niclasspecht/daki-yolks)
-(Node.js, Python, Playwright) und [pelican-eggs](https://github.com/pelican-eggs/eggs)
-(Java, Lua, Rust). Details und Lizenzhinweise: [CREDITS.md](CREDITS.md).
-
-Herkunft der importierten Eggs und Lizenzhinweise: siehe [CREDITS.md](CREDITS.md).
+Eggs kommen aus drei Quellen: [daki-yolks](https://github.com/niclasspecht/daki-yolks)
+(Node.js, Python, Playwright), [pelican-eggs](https://github.com/pelican-eggs/eggs)
+(Java, Lua, Rust, Ree6) und
+[pterodactyl/application-eggs](https://github.com/pterodactyl/application-eggs)
+(MongoDB, RethinkDB, MariaDB, PostgreSQL). Details und Lizenzhinweise:
+[CREDITS.md](CREDITS.md).
 
 Jedes Egg ist eine eigene Datei, z. B. `games/minecraft-java/egg-paper.json`.
 Der Ordnername innerhalb der Kategorie ist frei wählbar — Calagopus liest alle
