@@ -13,6 +13,12 @@ synchronisiert es automatisch.
 games/                      # Gameserver-Eggs
 applications/               # Anwendungs-Eggs
 generic/                    # Sprach-/Runtime-Eggs
+├── java/
+│   ├── egg-java.json               # Generic Java (Java 8 – 21)
+│   └── README.md
+├── lua/
+│   ├── egg-luvit-generic.json      # Lua via Luvit
+│   └── README.md
 ├── nodejs/
 │   ├── egg-nodejs.json             # Node.js 22 / 24 / 26
 │   └── README.md
@@ -22,13 +28,14 @@ generic/                    # Sprach-/Runtime-Eggs
 ├── python/
 │   ├── egg-python.json             # Python 3.11 – 3.15
 │   └── README.md
-├── java/                   # Java (Temurin/OpenJDK) — noch kein Egg
-├── lua/                    # Lua / LuaJIT — noch kein Egg
-└── rust/                   # Rust (cargo) — noch kein Egg
+└── rust/
+    ├── egg-rust-generic.json       # Rust via Cargo
+    └── README.md
 ```
 
-Die Gruppen `java`, `lua` und `rust` sind leer; im Upstream-Repo
-([daki-yolks](https://github.com/niclasspecht/daki-yolks)) gibt es dafür keine Eggs.
+Eggs kommen aus zwei Quellen: [daki-yolks](https://github.com/niclasspecht/daki-yolks)
+(Node.js, Python, Playwright) und [pelican-eggs](https://github.com/pelican-eggs/eggs)
+(Java, Lua, Rust). Details und Lizenzhinweise: [CREDITS.md](CREDITS.md).
 
 Herkunft der importierten Eggs und Lizenzhinweise: siehe [CREDITS.md](CREDITS.md).
 
