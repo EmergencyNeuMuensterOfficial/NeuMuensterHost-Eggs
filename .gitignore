@@ -1,0 +1,44 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs & temporäre Dateien
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+tmp/
+temp/
+
+# Node / Tooling (falls mal Skripte dazukommen)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Secrets — niemals committen
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Egg-Exporte / Zwischenstände
+!*.egg.json
+export/
+backup/
+*.zip
