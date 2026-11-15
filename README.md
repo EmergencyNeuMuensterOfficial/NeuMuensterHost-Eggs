@@ -13,14 +13,23 @@ synchronisiert es automatisch.
 games/                      # Gameserver-Eggs
 applications/               # Anwendungs-Eggs
 generic/                    # Sprach-/Runtime-Eggs
-├── nodejs/                 # Node.js
-├── nodejs-playwright/      # Node.js inkl. Playwright + Browser-Deps
-├── python/                 # Python (pip/venv)
-├── lua/                    # Lua / LuaJIT
-└── rust/                   # Rust (cargo)
+├── nodejs/
+│   ├── egg-nodejs.json             # Node.js 22 / 24 / 26
+│   └── README.md
+├── nodejs-playwright/
+│   ├── egg-nodejs-playwright.json  # Node.js + Browser-Libs (Chromium, Firefox)
+│   └── README.md
+├── python/
+│   ├── egg-python.json             # Python 3.11 – 3.15
+│   └── README.md
+├── lua/                    # Lua / LuaJIT — noch kein Egg
+└── rust/                   # Rust (cargo) — noch kein Egg
 ```
 
-Die Gruppen sind bewusst leer — sie werden erst mit den jeweiligen Eggs befüllt.
+Die Gruppen `lua` und `rust` sind leer; im Upstream-Repo
+([daki-yolks](https://github.com/niclasspecht/daki-yolks)) gibt es dafür keine Eggs.
+
+Herkunft der importierten Eggs und Lizenzhinweise: siehe [CREDITS.md](CREDITS.md).
 
 Jedes Egg ist eine eigene Datei, z. B. `games/minecraft-java/egg-paper.json`.
 Der Ordnername innerhalb der Kategorie ist frei wählbar — Calagopus liest alle

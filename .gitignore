@@ -15,6 +15,7 @@ desktop.ini
 *.rej
 tmp/
 temp/
+.temp
 
 # Node / Tooling (falls mal Skripte dazukommen)
 node_modules/
